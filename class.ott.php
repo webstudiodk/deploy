@@ -109,24 +109,6 @@ class OTT {
         return $this->expiration;
     }
 
-    // set the number of digits the code shoul have
-    // @param int $digits - the number of digits the computed code shoud have
-    // @return bool
-
-    public function setDigitsNumber ($digits = self::DEFAULT_DIGITSNR)
-    {
-        $digits = (int)$digits;
-        if ($digits > 0 && $digits <= count($this->DIGITS_POWER))
-        {
-            $this->codeDigitsNr = $digits;
-            return true;
-        }
-        else
-        {
-            $this->codeDigitsNr = self::DEFAULT_DIGITSNR;
-            return false;
-        }
-    }
 
     // Set the truncation offset
     // @param int $truncationOffset
