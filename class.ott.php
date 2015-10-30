@@ -9,6 +9,8 @@ class OTT {
     //Default hash method
     
     const DEFAULT_HASH = "sha1";
+    
+    const SSL = "0";
 
     //Default value for how long the code will be valid (in seconds)
     
